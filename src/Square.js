@@ -4,19 +4,19 @@ import {turn} from "./App";
 function Square() {
 
     const [color, setColor] = useState('white');
-    let blocked = false;
+    const [blocked, setBlocked] = useState('false');
 
     return (
         <td><button
             style = {{backgroundColor: color}}
             onClick = {() => {
-                    if(!blocked) {
+                    if(blocked === 'false') {
                         turn[0]++;
                         if(turn[0] % 2 === 1)
                             setColor('red');
                         else
                             setColor('blue');
-                        blocked = true;
+                        setBlocked('true');
                     }
                 }
             }

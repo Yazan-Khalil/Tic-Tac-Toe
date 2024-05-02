@@ -1,7 +1,7 @@
 import './App.css';
 import Grid from './Grid.js';
 
-export let turn = [0];
+export const turn = [0];
 
 function App() {
 
