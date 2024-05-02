@@ -1,6 +1,18 @@
+.main{
+    margin: 23vh auto;
+}
+
+#winner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
 table {
     border-collapse: collapse;
-    margin: 23vh auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table,
