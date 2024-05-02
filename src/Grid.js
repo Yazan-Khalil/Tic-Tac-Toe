@@ -2,7 +2,7 @@ import Row from './Row';
 
 function Grid() {
     return (
-        <table class = {"board"}>
+        <table>
             <Row />
             <Row />
             <Row />
