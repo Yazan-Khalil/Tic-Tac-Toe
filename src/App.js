@@ -7,12 +7,13 @@ export const grid = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function App() {
 
+    document.title = "Tic-Tac-Toe";
     return (
-        <div className = "main">
+        <div className="main">
             <p id="winner"></p>
-            <Grid/>
+            <Grid />
         </div>
-        
+
     );
 }
 

@@ -1,16 +1,16 @@
-import {grid} from './App';
-import {stop} from './App';
+import { grid } from './App';
+import { stop } from './App';
 
 
 function check(a, b, c) {
-    if(grid[a] === grid[b] && grid[a] === grid[c])
+    if (grid[a] === grid[b] && grid[a] === grid[c])
         return grid[a];
     else
         return 0;
 }
 
 function max(a, b) {
-    return (a > b)? a: b;
+    return (a > b) ? a : b;
 }
 
 export function isGameOver() {
@@ -26,11 +26,11 @@ export function isGameOver() {
     res = max(res, check(2, 4, 6));
 
     let draw = 3;
-    for(let i = 0; i < 9; i++) {
-        if(grid[i] === 0)
+    for (let i = 0; i < 9; i++) {
+        if (grid[i] === 0)
             draw = 0;
     }
-    if(draw !== 0 && res === 0)
+    if (draw !== 0 && res === 0)
         return draw;
 
     return res;
@@ -38,12 +38,12 @@ export function isGameOver() {
 
 export function endGame(winner) {
 
-    if(winner === 1)
+    if (winner === 1)
         winner = "RED wins!";
-    else if(winner === 2)
+    else if (winner === 2)
         winner = "BLUE wins!";
-    else 
-        winner = "Draw :(";
+    else
+        winner = "Draw &#128546";
 
     document.getElementById('winner').innerHTML = winner;
     stop[0] = 1;
