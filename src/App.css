@@ -1,7 +1,22 @@
+
+.image {
+    background-image: url("../public/playground.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    filter: blur(8px);
+    z-index: -1;
+}
+
 .main {
-    margin: 12vh auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 35vw;
 }
 
 #winner {
@@ -49,3 +64,4 @@ button {
         height: 100px;
     }
 }
+
