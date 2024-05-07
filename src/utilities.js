@@ -47,4 +47,5 @@ export function endGame(winner) {
 
     document.getElementById('winner').innerHTML = winner;
     stop[0] = 1;
+    document.getElementById('reset').innerHTML = "Play Again?";
 }

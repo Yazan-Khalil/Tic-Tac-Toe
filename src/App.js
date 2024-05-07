@@ -11,6 +11,7 @@ function App() {
     return (
         <div className="main">
             <p id="winner"></p>
+            <button id="reset">Reset</button>
             <Grid />
         </div>
 
