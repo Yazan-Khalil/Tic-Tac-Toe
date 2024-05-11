@@ -6,10 +6,8 @@ import { isGameOver } from './utilities';
 import { endGame } from './utilities';
 
 function Square(props) {
-
     const [color, setColor] = useState('white');
     const [blocked, setBlocked] = useState('false');
-
     return (
         <td><button
             style={{ backgroundColor: color }}

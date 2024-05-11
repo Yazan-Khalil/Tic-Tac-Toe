@@ -1,3 +1,32 @@
+#h1 {
+    color: #d41099;
+    text-align: center;
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 7%;
+    margin-bottom: 4%;
+    width: 100%;    
+}
+
+.span {
+    color: white;
+}
+
+#h11 {
+    color: rgb(18, 14, 15);
+    font-size: 45px;
+}
+
+.mainn {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+}
 
 .image {
     background-image: url("../public/playground.png");
@@ -17,15 +46,25 @@
     position: absolute;
     top: 0;
     left: 35vw;
+    margin-top: 13%;
 }
 
-#winner {
+#winner, #wins{
+    margin-top: 1vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#wins {
+    margin-left: 1vw;   
+}
+
+#text {
+    text-align: center;
 }
 
 table {
@@ -51,11 +90,13 @@ button {
 }
 
 #reset {
-    width: 10%;
-    height: 30px;
+    width: 20%;
+    height: 65px;
     margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    font-size: 25px;
+    background-color: #e352b7;
+    color: #FFFFFF;
 }
 
 @media(device-width < 500px) {
@@ -64,4 +105,3 @@ button {
         height: 100px;
     }
 }
-
