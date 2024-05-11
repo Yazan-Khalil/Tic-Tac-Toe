@@ -1,7 +1,6 @@
 import { grid } from './App';
 import { stop } from './App';
 
-
 function check(a, b, c) {
     if (grid[a] === grid[b] && grid[a] === grid[c])
         return grid[a];
@@ -39,12 +38,23 @@ export function isGameOver() {
 export function endGame(winner) {
 
     if (winner === 1)
-        winner = "RED wins!";
+        winner = "RED";
     else if (winner === 2)
-        winner = "BLUE wins!";
+        winner = "BLUE";
     else
-        winner = "Draw &#128546";
-
+        winner = "Draw";
+    let color;
+    if(winner === "RED")
+        color = "red";
+    if(winner === "BLUE")    
+        color = "blue";
+    document.getElementById('winner').style.color = color;  
     document.getElementById('winner').innerHTML = winner;
+    let second = "wins";
+    if(winner === "Draw")
+        second = "&#128546";
+    document.getElementById('wins').innerHTML = second;
     stop[0] = 1;
+    document.getElementById('reset').innerHTML = "Play Again?";
+
 }
