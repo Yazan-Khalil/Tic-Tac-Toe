@@ -50,7 +50,7 @@ export function endGame(winner) {
         color = "blue";
     document.getElementById('winner').style.color = color;  
     document.getElementById('winner').innerHTML = winner;
-    let second = "wins";
+    let second = "wins!";
     if(winner === "Draw")
         second = "&#128546";
     document.getElementById('wins').innerHTML = second;

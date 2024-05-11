@@ -13,19 +13,19 @@ function App() {
         <div>
             <div className="image"></div>
             <div className="mainn">
-             <h1 id="h1">Welcom to (Tic-Tac-Toe) Game</h1>
-              <h1 id="h11"><span className='span'>=&gt;</span>
-               Let's get started :</h1>
-               <br/>
-               <br/>
-               <br/>
-                <button id="reset">Reset</button>
-               </div>
+                <h1 id="h1"><span class="star">&#9733;</span>Welcome to our (Tic-Tac-Toe) Game!<span class="star">&#9733;</span></h1>
+                <h1 id="h11"><span className='span'>=&gt;&nbsp;</span>
+                    Let's get started:</h1>
+                <br />
+                <br />
+                <br />
+                <button id="reset" onClick = {() => {window.location.reload();}}>Reset</button>
+            </div>
             <div className="main">
                 <p id="text"><span id="winner"></span><span id="wins"></span></p>
                 <Grid />
             </div>
-            
+
         </div>
     );
 }
